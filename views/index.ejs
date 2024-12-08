@@ -1,0 +1,7 @@
+<% if (user) {%>
+<h3> <%= user.username %> </h3>
+<a href="/auth/signout">Sign out</a>
+<%} else {%>
+  <a href="/auth/signup">Sign up</a>
+  <a href="/auth/signin">Sign in</a>
+<%}%>
